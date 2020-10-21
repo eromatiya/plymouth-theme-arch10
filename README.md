@@ -16,10 +16,19 @@ Based on https://gitlab.com/maurom/deb10.
 
 ### Installation
 
-+ Assuming that you already have configured plymouth, `clone` the repo.
-+ `$ cp plymouth-theme-arch10/ /usr/share/plymouth/themes/arch10`. Overwrite `arch10` if you ever have one.
-+ `# plymouth-set-default-theme -R arch10`.
-+ Done! If regenerating `initramfs` image is a success, you can now `reboot`.
++ Manual Installation
+	- `$ cp plymouth-theme-arch10/ /usr/share/plymouth/themes/arch10`. Overwrite `arch10` if you ever have one.
+	- `# plymouth-set-default-theme -R arch10`.
+	- Done! If regenerating `initramfs` image is a success, you can now `reboot`.
+
++ AUR
+	- Makepkg
+		+ `$ git clone https://aur.archlinux.org/plymouth-theme-arch10.git`
+		+ `$ cd plymouth-theme-arch10`
+		+ `$ makepkg -sri`
+
+	- AUR-helper
+		+ `$ yay -S plymouth-theme-arch10`
 
 ### License
 
